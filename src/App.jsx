@@ -5,7 +5,7 @@ function App() {
   const [objectData, setObjectData] = useState({});
 
   useEffect(() => {
-    const ws = new WebSocket('ws://be-ws.onrender.com');
+    const ws = new WebSocket('wss://be-ws.onrender.com');
 
     ws.onopen = () => {
       console.log('Connected to WebSocket server');
